@@ -1,4 +1,4 @@
-.container{
+main{
   margin: 2rem;
 }
 .s-container {
@@ -105,7 +105,19 @@
   position: absolute;
 }
 
-Hover Animation
+.s-cards-carousel {
+  display: flex;
+  justify-content: center;
+  width: calc(100vw / 3 - 10%);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-in;
+}
+
+.s-card .s-card__image:hover{
+  scale: 1.5;
+}
+
+/* Hover Animation
 
 .s-card--hovered .s-card__background {
   cursor: pointer;
@@ -117,37 +129,30 @@ Hover Animation
   filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
 }
 
-body#st-1-hovered::before {
-  background-image: url('../../assets/img/icons/spock.png');
-  filter: grayscale(100%);
-}
-
-body#st-2-hovered::before {
-  background-image: url('../../assets/img/icons/spock.png');
-  filter: grayscale(100%);
-}
-
-body#st-3-hovered::before {
-  background-image: url('../../assets/img/icons/spock.png');
-  filter: grayscale(100%);
-}
-
-body[id^="st-"]::before {
-  opacity: 1;
-}
-
-body[id^="st-"] .s-card:not(.s-card--hovered) {
-  filter: grayscale(100%);
-}
-
 .s-card--hovered .s-card__title {
   bottom: 50%;
 }
 
-.s-cards-carousel {
-  display: flex;
-  justify-content: center;
-  width: calc(100vw / 3 - 10%);
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease-in;
+
+main#st-1-hovered::before {
+  background-image: url('../../assets/img/background/background--blue.png');
+  filter: grayscale(100%);
 }
+
+main#st-2-hovered::before {
+  background-image: url('../../assets/img/background/background--blue.png');
+  filter: grayscale(100%);
+}
+
+main#st-3-hovered::before {
+  background-image: url('../../assets/img/background/background--blue.png');
+  filter: grayscale(100%);
+}
+
+main[id^="st-"]::before {
+  opacity: 1;
+}
+
+main[id^="st-"] .s-card:not(.s-card--hovered) {
+  filter: grayscale(100%);
+} */
