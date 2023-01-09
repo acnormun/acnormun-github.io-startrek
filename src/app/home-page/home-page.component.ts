@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Directive, HostListener, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -8,5 +7,12 @@ import { Directive, HostListener, ElementRef, Input } from '@angular/core';
 })
 export class HomePageComponent {
 
+  selectedCard(id:string){
+
+    const element = document.getElementById(id);
+    element?.classList.add('s-card--hovered')
+
+  }
 
 }
+
