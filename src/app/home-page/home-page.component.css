@@ -1,3 +1,5 @@
+
+
 main{
   margin: 2rem;
 }
@@ -113,51 +115,11 @@ main{
   transition: transform 0.4s ease-in;
 }
 
-.s-card .s-card__image:hover{
+.s-card--hovered .s-card__image{
   scale: 1.5;
 }
 
-.s-card:not(.s-card--hovered){
-  filter: grayscale(100%);
-
-}
-
-/* Hover Animation
-
-.s-card--hovered .s-card__background {
-  cursor: pointer;
-  opacity: 0;
-}
-
-.s-card--hovered .s-card__image {
-  transform: scale(1.4);
-  filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
-}
-
-.s-card--hovered .s-card__title {
-  bottom: 50%;
-}
 
 
-main#st-1-hovered::before {
-  background-image: url('../../assets/img/background/background--blue.png');
-  filter: grayscale(100%);
-}
 
-main#st-2-hovered::before {
-  background-image: url('../../assets/img/background/background--blue.png');
-  filter: grayscale(100%);
-}
 
-main#st-3-hovered::before {
-  background-image: url('../../assets/img/background/background--blue.png');
-  filter: grayscale(100%);
-}
-
-main[id^="st-"]::before {
-  opacity: 1;
-}
-
-main[id^="st-"] .s-card:not(.s-card--hovered) {
-  filter: grayscale(100%);
-} */
