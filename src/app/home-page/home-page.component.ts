@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent {
 
-
   selectedCard(id:string){
     const element = document.getElementById(id);
     element?.classList.add('s-card--hovered');
@@ -22,12 +21,22 @@ export class HomePageComponent {
 
   rotate(id:number){
 
-    const numberCards = document.querySelector('.s-cards-carousel')?.children.length;
+    const numberCards = document.querySelector('.s-cards-carousel')?.children.length ?? 1;
+    let rotate =0;
+
+    for(let i=1;i<=numberCards;i++){
 
 
+      const rotate= id%3;
 
+      const card = document.getElementById(`st-${i}`);
+      card?.removeAttribute("class")
+      card?.classList.add('s-card')
+      card?.classList.add(`s-card-${i+rotate}}`)
 
   }
+
+}
 
 }
 
