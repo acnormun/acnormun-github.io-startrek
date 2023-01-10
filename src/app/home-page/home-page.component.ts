@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent {
 
+
   selectedCard(id:string){
     const element = document.getElementById(id);
     element?.classList.add('s-card--hovered');
@@ -17,6 +18,15 @@ export class HomePageComponent {
   unselectedCard(id:string){
     const element = document.getElementById(id);
     element?.classList.remove('s-card--hovered');
+  }
+
+  rotate(id:number){
+
+    const numberCards = document.querySelector('.s-cards-carousel')?.children.length;
+
+
+
+
   }
 
 }
