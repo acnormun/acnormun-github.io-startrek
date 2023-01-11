@@ -3,7 +3,7 @@
 @import url('/src/assets/reset.css');
 
 :root {
-  --primary-color: #5639d8;
+  --primary-color: #D38E49;
 }
 
 body{
@@ -11,7 +11,7 @@ body{
 
 }
 
-/* 
+/*
 #body{
   background: url('../src/assets/img/background/bg-teste.png');
   background-size: cover;
