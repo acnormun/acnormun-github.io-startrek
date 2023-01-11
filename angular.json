@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "star-trek": {
+    "startrek": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "star-trek:build:production"
+              "browserTarget": "startrek:build:production"
             },
             "development": {
-              "browserTarget": "star-trek:build:development"
+              "browserTarget": "startrek:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "star-trek:build"
+            "browserTarget": "startrek:build"
           }
         },
         "test": {
