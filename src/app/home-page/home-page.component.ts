@@ -12,31 +12,41 @@ export class HomePageComponent {
     element?.classList.add('s-card--hovered');
 
     const main = document.getElementById('main');
+    main?.classList.add('gray');
+
+    const controler = document.getElementById('controler')
+    controler?.classList.add('disapear')
   }
 
   unselectedCard(id:string){
     const element = document.getElementById(id);
     element?.classList.remove('s-card--hovered');
+
+    const main = document.getElementById('main');
+    main?.classList.remove('gray');
+
+    const controler = document.getElementById('controler')
+    controler?.classList.remove('disapear')
+
+
   }
 
   rotate(id:number){
 
     const numberCards = document.querySelector('.s-cards-carousel')?.children.length ?? 1;
     let rotate =0;
+    let position = [[1,2,3],[3,1,2],[2,3,1]];
 
     for(let i=1;i<=numberCards;i++){
-
-
       const rotate= id%3;
-
       const card = document.getElementById(`st-${i}`);
       card?.removeAttribute("class")
       card?.classList.add('s-card')
-      card?.classList.add(`s-card-${i+rotate}}`)
+      card?.classList.add(`s-card-${position[id-1][i-1]}`)
+
+    }
 
   }
-
-}
 
 }
 
