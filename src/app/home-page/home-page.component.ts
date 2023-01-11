@@ -16,6 +16,11 @@ export class HomePageComponent {
 
     const controler = document.getElementById('controler')
     controler?.classList.add('disapear')
+
+    const background = document.getElementById('background');
+    background?.classList.add('gray-filter');
+    background?.classList.remove('initial-image');
+    background?.classList.add(`image-${id}`)
   }
 
   unselectedCard(id:string){
@@ -27,6 +32,11 @@ export class HomePageComponent {
 
     const controler = document.getElementById('controler')
     controler?.classList.remove('disapear')
+
+    const background = document.getElementById('background');
+    background?.classList.remove('gray-filter')
+    background?.classList.add('initial-image');
+    background?.classList.remove(`image-${id}`)
 
 
   }

@@ -8,13 +8,16 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  background-image: url('../src/assets/img/background/bg-teste.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
+/* 
+#body{
+  background: url('../src/assets/img/background/bg-teste.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 
+}
 
-
-
+ */
 

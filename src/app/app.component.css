@@ -1,1 +1,36 @@
+#background{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: ease-in-out 1s;
+}
 
+.gray-filter{
+  filter: grayscale(100%);
+  filter: blur(.5);
+  transition: 1s ease-in-out;
+}
+
+.initial-image{
+  content: url('/assets/img/background/bridge-bg.jpg');
+  transition: ease-in-out 1s;
+}
+
+.image-st-1{
+  content: url('/assets/img/background/seriesEFilmes.jpg');
+  transition: ease-in-out 1s;
+
+}
+
+.image-st-2{
+  content: url('/assets/img/background/tripulation.jpg');
+  transition: ease-in-out 1s;
+
+}
+
+.image-st-3{
+  content: url('/assets/img/background/ships.jpg');
+  transition: ease-in-out 1s;
+
+}
