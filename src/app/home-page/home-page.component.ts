@@ -21,6 +21,8 @@ export class HomePageComponent {
     background?.classList.add('gray-filter');
     background?.classList.remove('initial-image');
     background?.classList.add(`image-${id}`)
+
+
   }
 
   unselectedCard(id:string){
@@ -43,9 +45,9 @@ export class HomePageComponent {
 
   rotate(id:number){
 
+
     const numberCards = document.querySelector('.s-cards-carousel')?.children.length ?? 1;
-    let rotate =0;
-    let position = [[1,2,3],[3,1,2],[2,3,1]];
+    let position = [[1,2,3,1],[3,1,2,2],[2,3,1,3]];
 
     for(let i=1;i<=numberCards;i++){
       const rotate= id%3;
@@ -53,6 +55,14 @@ export class HomePageComponent {
       card?.removeAttribute("class")
       card?.classList.add('s-card')
       card?.classList.add(`s-card-${position[id-1][i-1]}`)
+
+      if(i==id){
+        const button = document.getElementById(`${i}`);
+        button?.classList.add('s-controller__button--active');
+      }else{
+        const button = document.getElementById(`${i}`);
+        button?.classList.remove('s-controller__button--active')
+      }
 
     }
 
